@@ -1,0 +1,598 @@
+% !TeX root = template.tex
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+\documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+
+\usepackage{natbib}
+\bibliographystyle{Definitions/mdpi}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+
+%\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% accountaudit, acoustics, actuators, addictions, adhesives, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, aichem, aieng, aimater, aimed, aipa, air, aisens, algorithms, allergies, alloys, amh, analog, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arm, arthropoda, asc, asi, astronautics, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, bioresourbioprod, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, cancers, carbon, cardiogenetics, cardiovascmed, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complexities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, culture, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, dhi, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecm, ecologies, edm, eesp, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environremediat, epidemiologia, epigenomes, esa, est, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, gases, gastroent, gastrointestdisord, gastronomy, gels, genes, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, germs, glacies, grasses, green, greenhealth, gucdd, hardware, hazardousmatters, healthcare, hearts, hemato, hematolrep, hep, heritage, higheredu, highthroughput, horticulturae, hospitals, hydrobiology, hydrogen, hydrology, hydropower, hygiene, idr, iic, ijem, ijerph, ijgi, ijmd, ijms, ijns, ijom, ijpb, ijt, ijtm, ijtpp, ime, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jaestheticmed, jal, jcdd, jcm, jcp, jcrm, jcs, jcto, jdad, jdb, jdream, jemr, jeta, jfb, jfmk, jgbg, jgg, jimaging, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joi, joitmc, joma, jop, joptm, jor, jox, jpbi, jphytomed, jpm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, lae, land, life, lights, limnolrev, lipidology, liquids, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neuroimaging, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, occuphealth, oceans, ohbm, onco, optics, oral, organics, organoids, osteology, oxygen, pandemics, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, precipitation, precisoncol, preprints, proceedings, processes, prosthesis, proteomes, psf, psychiatryint, psychoactives, purification, quantumrep, quaternary, qubs, radiation, rdt, reactions, realestate, receptors, recycling, regeneration, remotesensing, reports, reprodmed, resources, rheumato, rjpm, robotics, rsee, ruminants, safety, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, shi, signals, sinusitis, siuj, skins, smartcities, sna, societies, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stratsediment, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, toxics, toxins, tph, transplantology, transportation, traumacare, traumas, tri, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, welding, wem, wevj, wild, wind, women, world, zoonoticdis
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial,  giantsinurology, urologyaroundtheworld
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. Remove "pdftex" for (1) compiling with LaTeX & dvi2pdf (if eps figures are used) or for (2) compiling with XeLaTeX.
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2025}
+%\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{ } 
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ } 
+\datepublished{ } 
+%\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For retracted papers: "Retracted: XXX" date in the original paper.
+\hreflink{https://doi.org/} % If needed use \linebreak
+%\doinum{}
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+%\IsAssociation{yes} % For association journals
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, float, amsmath, amssymb, lineno, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, colortbl, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, array, tabularx, pbox, ragged2e, tocloft, marginnote, marginfix, enotez, amsthm, natbib, hyperref, cleveref, scrextend, url, geometry, newfloat, caption, draftwatermark, seqsplit
+% cleveref: load \crefname definitions after \begin{document}
+
+%=================================================================
+% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Habitat-driven variation in sexual dimorphism of amphipods}
+
+% Author ORCID IDs
+\newcommand{\orcidauthorA}{0009-0001-3600-6653}
+
+% Authors (full first names)
+\Author{
+Amey Danole$^{1,2}$\orcidA{}*, 
+Fernando Tuya$^{2}$, 
+Francisco Otero-Ferrer$^{2}$, 
+Sonia Díaz-Vergara$^{2}$ 
+and Sandra Navarro-Mayoral$^{2}$
+}
+
+% MDPI internal command: Authors for metadata
+\AuthorNames{Amey Danole, Fernando Tuya, Francisco Otero-Ferrer, Sonia Díaz-Vergara and Sandra Navarro-Mayoral}
+
+% Affiliations
+\address{%
+$^{1}$ \quad University of Groningen, Groningen, The Netherlands; a.danole@student.rug.nl\\
+$^{2}$ \quad Biodiversity and Conservation Research Group, IU-ECOAQUA, Scientific and Technological Marine Park of the Universidad de Las Palmas de Gran Canaria, Telde 35214, Spain
+}
+
+% Corresponding author
+\corres{Correspondence: a.danole@student.rug.nl}
+
+% Current address and/or shared authorship
+%\firstnote{Current address: Affiliation.}  
+% Current address should not be the same as any items in the Affiliation section.
+
+%\secondnote{These authors contributed equally to this work.}
+% The commands \thirdnote{} till \eighthnote{} are available for further notes.
+
+%\simplesumm{} % Simple summary
+
+%\conference{} % An extended version of a conference paper
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+\abstract{Sexual dimorphism in morphological traits is widespread across animals and can result from differing life-history strategies, sex-specific competitive pressures, and ecological interactions, which may be influenced by habitat structure and complexity. For epifaunal organisms, e.g., amphipods that inhabit structurally diverse benthic habitats, the structure of the habitat plays a key role in mediating access to food, mate encounters, and refuge provision. Here, we explored patterns of variation in body size and gnathopod 2 ratio (gnathopod 2 length/body length) among amphipod species in different marine habitats. We focus on two amphipod species, \textit{Ampithoe ramondi} and \textit{Caprella acanthifera}, across four benthic habitat types: rhodolith beds, macroalgae-dominated reefs, seagrass meadows, and black coral forests. \textit{A. ramondi} was present in all habitats except black coral forests, and males were significantly larger than females only in macroalgae-dominated reefs. Males also exhibited higher gnathopod ratios than females, increasing from macroalgae-dominated reefs to seagrass meadows and rhodolith beds. \textit{C. acanthifera} was found in macroalgae-dominated reeds and black coral forests, where males were larger than females on average, but no significant habitat alterations were detected. Neither \textit{A. ramondi} nor \textit{C. acanthifera} was found in all four habitats. These results suggest that patterns of sexual dimorphism across coastal habitats are species-specific, with sexual selection operating more subtly in some taxa (e.g., \textit{C. acanthifera}) than others, likely shaped by both habitat-specific ecological pressures and differences in life-history strategies. Expanding such analyses to more taxa and with balanced sampling across habitats and environmental gradients will offer deeper insight into how natural and sexual selection interact and inform how these dynamics may shift under changing climate regimes.}
+
+% Keywords
+\keyword{Amphipoda, sexual dimorphism, sexual selection, marine ecology, Canary Islands} 
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal BioTech, Fishes, Neuroimaging and Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent The goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What are the implications of the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{section}{-1} %% Remove this when starting to work on the template.
+%\section{How to Use this Template}
+
+%The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions on the authors' page of the journal to verify the correct order and names. For any questions, please contact the editorial office of the journal or support@mdpi.com. For LaTeX-related questions please contact latex@mdpi.com.%\endnote{This is an endnote.} % To use endnotes, please un-comment \printendnotes below (before References). Only journal Laws uses \footnote.
+
+% The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
+
+\section{Introduction}
+
+Sexual dimorphism refers to differences between males and females of a species, which can result from sexual or fecundity selection or from intersexual niche divergence \citep{shine1989, andersson1994, stillwell2010}. Sexual selection favors traits that increase mating success, whereas fecundity selection acts primarily on traits enhancing reproductive output. In contrast, intersexual niche divergence arises when males and females experience different ecological pressures and consequently specialize on distinct resources or habitats. These differences may be morphological, physiological, or behavioral, and their magnitude and direction are often shaped by abiotic (e.g. temperature, nutrient availability or habitat structure) and biotic factors (e.g. predation pressure or interactions with other organisms)  \citep{shine1989, endler1992}. For example, shared parental care, intraspecific competition, or mate availability can limit the development of certain traits, reducing dimorphism and favoring more similar (monomorphic) characteristics  \citep{clutton2007sexual}. By contrast, when sexual selection strongly favors one sex, intense competition for mates can drive the evolution of exaggerated traits and behaviors, resulting in pronounced sexual dimorphism \citep{andersson1994, darwin1871, lande1980}. While sexual dimorphism across habitats has been widely studied in terrestrial organisms  \citep{ford1994evolution, geist1988sexual}, there are very few studies in marine systems examining how sexual dimorphism varies within the same species across different habitats \citep{cleasby2015sexual, losos2003sexual, wikelski1997body}. Past studies in marine-associated species have shown that sexual dimorphism can be associated with sex-specific habitat use \citep{cleasby2015sexual} or with differences in selection pressures across environments \citep{wikelski1997body}, yet comparative evidence of how dimorphic traits vary across marine habitats within species is scarce, limiting our understanding of how environmental context shapes the expression of dimorphic traits.    
+
+The Amphipoda is one of the most ecologically diverse crustacean orders, encompassing over 10,000 species \citep{arfianti2018progress, horton2023world} inhabiting all aquatic environments worldwide, from hadal depths to alpine freshwater streams, from lightless groundwaters to tropical forests, and from sea bottom sediments to the entrails of gelatinous plankton \citep{lowry2017phylogeny}. Amphipods display diverse mating strategies and pronounced sexual dimorphism, particularly in the enlarged male gnathopods in some families, providing an opportunity to examine how ecological context shapes trait expression \citep{navarro2025inside, copilaș2021morphology}. For instance, in caprellid amphipods (family Caprellidae) from the Pagasitikos Gulf, pronounced sexual dimorphism in body size has been reported \citep{lolas2013population}. In some amphipod families, the first two pairs of pereopods are modified into gnathopods, with the second pair typically enlarged in males and used during copulation \citep{hume2005sexual}. Such marked dimorphism in gnathopods suggests a role as sexually selected traits, analogous to weapons in other crustaceans and insects \citep{emlen2008evolution}, as proposed or demonstrated in their use in intrasexual contests, defence, nest-guarding, territorial interactions, courtship displays, and assessment of female quality or as weapons \citep{Wellborn2000, takeshita2012morphological, darwin2011new, thomas2007new, longo2021snaps}. Although direct evidence for amphipod gnathopods as weapons is limited, both their morphology and associated behaviors indicate a role in mating competition, potentially shaped by selective pressures, such as mate guarding or signally in complex habitats \citep{clutton1982functions}. Thus, understanding the functional morphology of sexually dimorphic amphipod structures necessitates the consideration of the ecological context, including habitat type, host associations, and feeding ecology, which influence the selective pressures acting on these traits \citep{Wellborn2000, wellborn2002trade, wellborn2005ecological}. Environmental conditions and habitat heterogeneity are expected to influence the intensity and expression of sexual dimorphism, for example, through intraspecific trait variation created by different selective pressures across gradients, and thus favouring distinct phenotypes in response to local conditions such as physical disturbance or resource availability  \citep{Bolnick2003}. At the habitat level, structural complexity plays a crucial role in shaping biodiversity by influencing species abundance, community composition, and key ecological processes. Complex habitats, such as dense macroalgae-dominated reefs or structurally diverse coral reefs, often provide increased shelter and refuge, which can reduce predation risk and enhance survival, particularly by allowing the coexistence of a wider range of phenotypes \citep{NavarroMayoral2020, navarro2023drivers}. However, this relationship is not unidirectional. In habitats with lower structural complexity, limited refuge, and reduced food availability, such as black coral forests lacking epiphytic layers, smaller body sizes may be favored as a strategy to reduce predation risk and energetic demands under resource limitation \citep{navarro2025inside}. From an evolutionary perspective, shifts in body size reflect trade-offs between ecological relaxation driven by empty niches and resource abundance versus constraints imposed by limited resources, a pattern well established in island biogeography \citep{fernandez2004introduccion}. The habitat complexity can also affect mate encounter rates and resource distribution, favoring the coexistence of multiple phenotypes within a population \citep{endler1992, shine1989}. For example, in amphipods, habitats with intricate structures may allow males with different sizes or gnathopod morphologies to succeed under different microhabitat conditions, highlighting the role of habitat architecture in modulating sexual dimorphism \citep{premate2024sexual}. 
+    
+ The coastal habitats of the Canary Islands include black coral forests, rhodolith beds, seagrass meadows and macroalgae-dominated beds on reefs \citep{bosch2023black, perez2023effect, alfonso2021fast, barbera2005spatial}. These communities are ecosystem engineers that modify, create, or maintain habitat structures, thereby influencing resource availability, shelter, and interactions among other organisms \citep{jones1994organisms, feldens2023can}. These complex habitats can affect survival, predation risk, mate encounters, and the expression of morphological and behavioural traits. Although all four habitats share three-dimensional architecture, they differ in structural arrangement, a factor that may shape the selective pressures acting on amphipods and the development of sexually dimorphic traits  \citep{premate2024sexual}. Amphipods, in particular, maintain a close relationship with their habitats due to their direct development, limited mobility and, in some cases, specialized feeding strategies, which constrain their dispersal \citep{fernandez2021connectivity, navarro2025inside}. Recent studies on amphipods show that sexual dimorphism can be lineage-specific and context-dependent, with certain traits diverging adaptively among cryptic freshwater lineages \citep{kabus2025morphological} or differing in specific morphological traits consistent with sexual dimorphism in marine populations \citep{song2025redescription}. Few studies have compared sexual dimorphism across habitats within marine amphipod species. Thus, taking advantage of their strong habitat association, we studied amphipods across habitats with varying structural complexity to assess how these differences influence trait expression and sexual dimorphism. We sampled amphipod species across the four aforementioned benthic habitats in Gran Canaria.  Morphological traits (i.e. body length and gnathopod 2 size) were measured as functional traits to assess how habitat influences sexual dimorphism. We focused on two amphipod species, \textit{A.ramondi} and \textit{C.acanthifera}, exhibiting contrasting morphologies and mating strategies, allowing us to explore how sexual dimorphism varies across habitats. We hypothesize that sexual dimorphism is more pronounced in structurally intricate habitats, where fine-scale complexity intensifies selective pressures.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Materials and Methods}
+
+\subsection{Study region}
+    		
+    		\begin{figure}[H]
+    		\centering
+    		\includegraphics[width=\textwidth]{Final_figures/Amphipod_paper_figure_7}
+    		\caption{(A) The Canary Islands Archipelago (28.292° N, 16.629° W) lies in the Atlantic Ocean off northwestern Africa. (B) Gran Canaria (27.9202° N, 15.5474° W) is located approximately 150 km from the Moroccan coast; sampling was focused on the eastern shore (grey inset). (C) Map of sampling sites across four benthic habitats - black coral, macroalgae-dominated reefs, rhodolith beds, and seagrass meadows, surveyed at five distinct locations along the eastern coast of Gran Canaria, viz. Jinámar, Tufia, Gando, Risco Verde, and Arinaga (from north to south), with a maximum distance of around 21 km between Jinámar in the north and Arinaga in the southeast. (D) Representative habitat images: (i) black coral forests, (ii) macroalgae-dominated reefs, (iii) seagrass meadows, and (iv) rhodolith beds, photographed at study sites around Gran Canaria. (@photo credit: Franck Gazzola and Fernando Espino)}
+    		\label{fig:amphipodpaperfigure7}
+    		\end{figure}
+    		
+    		Specimens were collected from two locations at each of four marine habitats around the eastern coastal areas of Gran Canaria (Fig.~\ref{fig:amphipodpaperfigure7}), including seagrass meadows, rhodolith beds, macroalgae-dominated reefs, and black corals. Sampling was conducted from 2018 to 2022. Rhodolith beds were sampled in 2015 and 2016 \citep{NavarroMayoral2020}, seagrass meadows between 2016 and 2018 \citep{navarro2024hidden}, and black coral forests in November–December 2022 \citep{navarro2025inside}. Amphipods from macroalgae-dominated reefs were collected in the summer of 2024. Detailed information on sample sizes, including the number of individuals per habitat, year, and species, as well as the specific sampling methodologies, is provided in the referenced studies.  Because the sites are geographically close and experience similar broad-scale environmental conditions (see Supplementary Fig.~\ref{fig:SST_plot}), any differences observed in sexual dimorphism among habitats are likely attributable to habitat-specific structural features rather than overall environmental variation. The eastern coast of Gran Canaria is characterized by steep volcanic slopes and a mixture of hard and soft substrates that support diverse benthic habitats. Local hydrography is influenced by persistent northeast trade winds, which generate wind-driven waves and swells \citep{smith2021whole}, while surrounding waters are largely oligotrophic, with occasional inputs of cooler, nutrient-rich water from coastal upwelling \citep{ortiz2022oligotrophic}. The eastern shoreline features a range of subtidal habitats including extensive rocky platforms, sandy plains, and biogenic assemblages. Based on existing knowledge of habitat distribution and ecological relevance to amphipod assemblages, representative sites were selected within the four most abundant and structurally distinct habitats in the region.
+    				
+    		\subsection{Sampling design and specimen processing}
+    	Sampling was conducted by SCUBA diving at depths of 18–50~m for rhodolith beds, 8–12~m for seagrass meadows, 3–8~m for macroalgae-dominated reefs, and 25–32~m for black coral forests. Samples associated with each habitat were retrieved and processed in the laboratory to extract epifaunal amphipods. For rhodolith beds, five random 25~$\times$~25~cm quadrats of rhodolith nodules were hand-collected by SCUBA divers, frozen at $-20~^\circ$C, followed by epifaunal extraction and sorting. For seagrass meadows, five random 25~$\times$~25~cm  quadrats containing seagrass canopy were bagged, cut at sediment, and sieved for epifauna. For macroalgae-dominated reefs, holdfasts were cut within five random 25~$\times$~25~cm quadrats, bagged, frozen, washed, sieved, and mobile fauna was identified. Following the method described by \citep{navarro2024hidden}, for black coral forests, epifauna was collected by briefly vacuuming the top branches of \textit{Antipathella wollastoni} underwater and preserved in ethanol. Vacuuming was performed using an ad hoc vacuum cleaner for a standardized duration of 20 seconds per colony, suctioning the top branches of each colony (see \citet{navarro2024hidden}) Collected epifaunal samples were transported to the laboratory in seawater-filled containers. Except for black coral samples, which were processed fresh to prevent epifaunal damage, all other samples were stored at $-20~^\circ$C until sorting. In the laboratory, each samples was inspected, and the epifauna was separated from plant and and algal matter, sediment and coral mucus using a 250~$\mu$m mesh. To avoid bias in size-based comparisons, organisms were separated using the same 250 µm mesh across habitats. All organisms were preserved in 96\% ethanol and identified to the lowest possible taxonomic level. No ethical approval was required for all but one species, the black corals \citep{Wagner2012}, as none of the other sampled species are legally protected in Spain. All individuals were identified to the lowest taxonomic level possible using a stereomicroscope (OPTIKA SZP-10, Ponteranica, Italy) and a compound microscope (Leica DM1000 LED, Wetzlar, Germany), identified to the nearest taxonomic level \citep{bellan1982amphipoda, bellan1989amphipoda, bellan1993amphipoda}, and preserved in absolute ethanol. Taxonomic keys employed included \citet{ruffo1982family, ruffo1989amphipoda, bellan1993amphipoda, bellan1998amphipoda}, and specific references for the genus Caprella \citep{guerra2002caprellidea}. \textit{Ampithoe ramondi} and \textit{Caprella acanthifera} were the primary focus of this study, as sufficient individuals of both sexes were collected across habitats to allow analysis of sexual dimorphism. However, neither species was observed across all four habitats. \textit{Ampithoe ramondi} occurred in three habitats, rhodolith beds, seagrass meadows and macroalgae-dominated reefs, whereas \textit{Caprella acanthifera} was restricted to only two habitats, macroalgae-dominated reefs and black coral forests.
+	
+	\subsection{Morphometric measurements}
+    	
+    	\begin{figure}[tbph]
+    	\centering
+    	\includegraphics[width=\textwidth]{Final_figures/Representative_image_panel}
+    	\caption{Images illustrating body length (panels a, c) and gnathopod 2 length (panels b, d) measurements for a male \textit{Ampithoe ramondi} (a, b) and \textit{Caprella acanthifera} (c, d) individual.}
+    	\label{fig:amphipodpaperfigure6}
+    	\end{figure}
+    
+    		In the laboratory, individuals were examined under a stereomicroscope (OPTIKA, SZP- 10, C-P8, Ponteranica, Italy) mounted with its associated camera. Images were analysed using ImageJ (Schneider et al., 2012). Morphometric traits measured included body length (determined by measuring the distance from the dorsal margin at the base of the first antennae to the posterior end of the telson following the methodology described by Wilhelm et al., \citeyear{wilhelm1998seasonal}) and Gnathopod 2 length which was calculated by measuring along the circumference of the gnathopod-2 oriented towards the observer under the microscope (refer Supplementary Table~\ref{tab:table1} and Fig.~\ref{fig:amphipodpaperfigure6}). Measurement precision was estimated at 0.01–0.05 mm, depending on image scale calibration (either 0.5 mm or 1 mm per image). To avoid underestimating mean body size, only the largest individuals were included in analyses. 
+    		
+    		\subsection{Data analysis}
+    		
+    		The Sexual Dimorphism Index (SDI) was calculated using the standard formula:
+    		
+    		SDI = (mean male trait – mean female trait) / mean female trait, 
+    		
+    		which was applied to each of the traits analyzed, refer Supplementary Fig.~\ref{fig:sdi_plot}. A positive SDI value indicates that males have larger average trait values, reflecting male-biased sexual selection, whereas a negative SDI suggests female-biased sexual dimorphism, reflecting fecundity-based selection. This approach follows the widely used method proposed by \citep{lovich1992} for quantifying sexual dimorphism in morphological traits.
+    		
+    		Data wrangling and statistical analysis were carried out in RStudio version 2024.09.1+394 “Cranberry Hibiscus” using R version 4.4.2 \citep{R2024}. For interspecific comparisons, we included a minimum of five individuals per sex of the two targeted species and fitted linear models to test the effects of species, sex, and their interaction on body length and gnathopod ratio. Gnathopod ratio was calculated by dividing the gnathopod length by the individual’s body length to account for differences in body size. For species-specific analyses, univariate linear models were applied separately to each species to test for the effects of sex and habitat on each morphometric trait. For gnathopod ratio data, which are constrained between 0 and 1, beta regression models were implemented using the  \texttt{glmmTMB} package \citep{brooks2017}. with a logit link. Model diagnostics- including residual distribution, heteroscedasticity, and normality, were assessed visually and using simulation-based methods via the \texttt{DHARMa} package \citep{hartig2024}. We computed estimated marginal means (EMMs) using the \texttt{emmeans} package \citep{lenth2025} to examine interaction effects (Sex × Habitat), followed by visualization of these contrasts. Visualizations were generated using \texttt{ggplot2} \citep{wickham2016}.
+
+
+
+%\begin{quote}
+%This is an example of a quote.
+%\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+
+\subsection{Sex-specific allometry comparisons}
+    		
+    In \textit{A. ramondi}, gnathopod 2 length scaled positively with body size ($\beta = 0.95$, $p < 0.001$;
+    Fig.\ref{fig:sexspecificallometryarca}), with males exhibiting a marginally steeper slope than females ($\beta =
+    0.13$, $p = 0.32$), although this difference was not statistically significant. The sex effect
+    alone was also non-significant ($\beta = 0.21$, $p = 0.36$), indicating that while males tend to
+    have longer gnathopods, the scaling relationship between gnathopod length and body
+    length is broadly similar across sexes. Conversely, in \textit{C. acanthifera}, neither body
+    length ($\beta = -0.03$, $p = 0.93$), sex ($\beta = -0.46$, $p = 0.56$), nor their interaction ($\beta = 0.68$, $p
+    = 0.21$) significantly predicted gnathopod 2 length. These results suggest that sexual
+    dimorphism in gnathopod 2 exaggeration is less pronounced or absent in \textit{C. acanthifera},
+    with both sexes exhibiting comparable scaling patterns.
+    		
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=\textwidth]{Final_figures/Sex_specific_allometry_Ar_Ca}
+    	\caption{Sex-specific allometry of gnathopod 2 length in \textit{Ampithoe ramondi} and \textit{Caprella acanthifera}. Points represent individual measurements, and shaded areas around regression lines indicate 95\% confidence intervals.}
+    	\label{fig:sexspecificallometryarca}
+    \end{figure}
+    
+    We also examined habitat-specific allometry of gnathopod ratios within each sex using log-transformed body length. In A. ramondi, males exhibited positive scaling of gnathopod ratio with body size in rhodolith beds (slope = 0.45, 95\% CI [0.13, 0.77]), whereas females showed no strong scaling (0.04, 95\% CI [-0.15, 0.23]). In macroalgae-dominated reefs and seagrass meadows, slopes were near zero for both sexes, indicating broadly consistent gnathopod ratios across body sizes (refer Supplementary Fig.~\ref{fig:Allometry_Ar}). For C. acanthifera, neither sex showed strong allometric scaling of gnathopod ratio with body size across the sampled habitats of black-coral forests and macroalgae-dominated reefs, with slopes ranging from -0.01 to 0.19 and 95\% confidence intervals overlapping zero (refer Supplementary Fig.~\ref{fig:Allometry_Ca}). These results suggest that sex-specific exggeration of gnathopod ratio is most pronounced in male A.ramondi in rhodolith beds, while habitat has little effect on allometry in other cases.
+    
+    		\subsection{Species-specific analyses}
+    		
+    		\subsubsection{\textit{Ampithoe ramondi}}
+    	
+    		%\vspace{\baselineskip}  
+    		\textbf{Body length}
+    		%\vspace{\baselineskip} 
+    		
+    		\textit{Ampithoe ramondi} occurred in rhodolith beds, macroalgae-dominated reefs, and seagrass meadows and was absent from black coral forests. For A. ramondi, SDI for body length was low across habitats (rhodolith beds: 0.059; macroalgae-dominated reefs: 0.12; seagrass meadows: -0.017), whereas gnathopod ratios showed stronger dimorphism, particularly in rhodolith beds (0.7) and seagrass meadows (0.58; see Supplementary Fig.~\ref{fig:sdi_plot}). Body length in \textit{Ampithoe ramondi} was significantly influenced by habitat, sex, and their interaction (adjusted $R^2 = 0.27$, $p < 0.001$; Fig.\ref{fig:amphipodpaperfigure2}). Individuals from macroalgae-dominated reefs were significantly smaller than those from rhodolith beds ($\beta = -2.64$, $p < 0.001$), while body length in seagrass meadows did not differ significantly from rhodolith beds ($\beta = -0.56$, $p = 0.45$). Although males were on average larger than females, this difference was not statistically significant overall ($\beta = 0.36$, $p = 0.68$). A significant Sex~$\times$~Habitat interaction ($p < 0.005$) indicated that the effect of sex on body length varied among habitats, with the greatest difference observed in macroalgae-dominated reefs, where males were larger than females. In contrast, sex-related differences were negligible in seagrass meadows and rhodolith beds. 
+    		
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Final_figures/amphipod_paper_figure_2}
+    \caption{Box plot showing body length differences between females (pink) and males (blue) of \textit{Ampithoe ramondi} across rhodolith beds, macroalgae-dominated reefs, and seagrass meadows. Sample sizes (F = female, M = male) for each habitat are as follows: rhodolith beds — F = 10, M = 12; macroalgae-dominated reefs — F = 45, M = 9; seagrass meadows — F = 29, M = 12.}
+    \label{fig:amphipodpaperfigure2}
+    \end{figure}
+    		
+    	
+    	%\vspace{\baselineskip}  		
+    	\textbf{Gnathopod ratio}
+    	%\vspace{\baselineskip}  
+    	
+    	Beta regression analysis revealed significant effects of sex (p $<$ 0.001), habitat (macroalgae-dominated reefs: p = 0.035; seagrass meadows: p = 0.016), and their interaction (male × macroalgae-dominated reefs: p < 0.001 ) on gnathopod ratio (Fig.~\ref{fig:amphipodpaperfigure3}). The difference between males and females was negligible in macroalgal-dominated reefs, but males had higher gnathopod ratios than females in seagrass meadows and rhodolith beds. Male gnathopod ratios were highest relative to females in rhodolith beds (female/male odds ratio = 0.47, 95\% CI [0.37, 0.59], p < 0.0001), intermediate in seagrass meadows (0.57, 95\% CI [0.47, 0.69], p < 0.0001), and negligible in macroalgae-dominated reefs (0.87, 95\% CI[0.71, 1.07], p = 0.196). 
+    	
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Final_figures/amphipod_paper_figure_3}
+    \caption{Box plot showing gnathopod ratio differences between females (pink) and males (blue) of \textit{Ampithoe ramondi} in rhodolith beds, macroalgae-dominated reefs and seagrass meadows. Sample sizes for each species and sex are provided in Fig.~\ref{fig:amphipodpaperfigure2}}
+    \label{fig:amphipodpaperfigure3}
+    \end{figure}
+    	
+    		\subsubsection{\textit{Caprella acanthifera}}
+    		
+    		%\vspace{\baselineskip}  
+    		\textbf{Body length}
+    		%\vspace{\baselineskip}  
+    		
+    			\textit{Caprella acanthifera} was recorded only in macroalgae-dominated reefs and black coral forests and was not observed in the other sampled habitats. \textit{Caprella acanthifera} exhibited moderate SDI for both traits, with gnathopod ratio dimorphism highest in macroalgae-dominated reefs (0.52) and minimal in black-coral forests (0.026; see Supplementary Fig.~\ref{fig:sdi_plot}). The linear model indicated a significant effect of sex on body length ($p = 0.01$, Fig.~\ref{fig:amphipodpaperfigure4}), with males larger than females ($\beta = 1.54$, $p = 0.009$). Habitat had a significant effect, with individuals in black coral forests being smaller than those in macroalgae-dominated reefs ($\beta = -0.85$, $p = 0.0006$), but the interaction between sex and habitat was not significant ($\beta = -0.38$, $p = 0.37$), indicating that the male--female size difference was consistent across habitats.
+    		
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Final_figures/amphipod_paper_figure_4}
+    \caption{Box plot showing body length differences between females (pink) and males (blue) of \textit{Caprella acanthifera} in macroalgae-dominated reefs and black coral forests. Sample sizes for each habitat are as follows (F = female, M = male): Macroalgae-dominated reefs — F = 28, M = 6; Black coral forest — F = 9, M = 6.}
+    \label{fig:amphipodpaperfigure4}
+    \end{figure}
+    	
+    		
+    		%\vspace{\baselineskip}  
+    		\textbf{Gnathopod ratio}
+    		%\vspace{\baselineskip} 
+    		
+    		Beta regression analysis revealed significant effects of sex (p < 0.001), habitat (p < 0.001), and their interaction (p < 0.001) on gnathopod ratio in \textit{C. acanthifera} (Fig.~\ref{fig:amphipodpaperfigure5}). Males had higher gnathopod ratios than females in macroalgae-dominated reefs, whereas the male-female difference was reduced in black coral forests.
+    		
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Final_figures/amphipod_paper_figure_5}
+    \caption{Box plot showing gnathopod ratio differences between females (pink) and males (blue) of \textit{Caprella acanthifera} in macroalgae-dominated reefs and black coral forests. Sample sizes for each species and sex are provided in  Fig.~\ref{fig:amphipodpaperfigure4}.}
+    \label{fig:amphipodpaperfigure5}
+    \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+
+Sexual dimorphism in amphipod morphology varied significantly by species and habitat. \textit{Ampithoe ramondi} exhibited pronounced male-biased dimorphism in body length and gnathopod ratio, particularly in macroalgae-dominated reefs. Similarly, \textit{Caprella acanthifera} showed male-biased dimorphism in body length in macroalgae-dominated reefs, but gnathopod size was similar between sexes across habitats. Differences in reproductive strategies, mating competition \citep{conlan1991precopulatory, borowsky1987}, and habitat-specific factors such as resource availability or predation \citep{bazikalova1962taxonomy} likely underlie the observed patterns. However, direct comparisons between \textit{Ampithoe ramondi} and \textit{Caprella acanthifera} are constrained by the fact that macroalgae-dominated reefs were the only habitat common to both species.
+    				
+    		Habitat plays a central role in modulating trait expression. In \textit{A. ramondi}, individuals from rhodolith beds were consistently larger than those from macroalgae-dominated reefs or seagrass meadows. This pattern may reflect differences in available colonizable space and niche diversity among benthic habitats, where structurally complex environments can reduce competition for space and resources and support larger body sizes \citep{navarro2025inside}. Bathymetric range may further mediate these patterns through differences in environmental stability and resource availability, including light penetration and epiphytic development, which increase habitat complexity and vary temporally. Shallow habitats are often subject to strong intra-annual variability, such as winter storms and swell, favoring species adapted to fluctuating habitat structure and resource inputs, whereas deeper habitats tend to experience lower but more stable resource availability. Compared to the other habitats considered in this study, rhodolith beds occur at greater depths and are characterized by extensive interstitial spaces \citep{cabrito2024morphological} that may buffer hydrodynamic stress and provide more stable microhabitats, potentially allowing greater energetic investment in body growth.
+    		
+    		The largest degree of sexual dimorphism in body size in \textit{A.ramondi}, occurred in macroalgae-dominated reefs, where males were significantly larger than females. Macroalgae provide both shelter \citep{lippert2001macrofauna} and trophic resources supporting diverse and stable amphipod communities \citep{hughes2004}. They are well-established facilitators of amphipod assemblages, with more diverse macroalgae-dominated reefs supporting higher biodiversity richness due to enhanced niche partitioning and habitat complexity \citep{ferreira2025}. The three-dimensional structure of macroalgae-dominated reefs promotes sediment accumulation and increases prey availability, benefiting both detritivorous and carnivorous species \citep{edgar1993resource}. Amphipods often function as mesoherbivores, consuming macroalgae directly \citep{poore2012global}, and forming close associations with these habitats \citep{leite2007}. This pattern may reflect higher mating competition or more favorable energetic and ecological conditions for trait exaggeration in macroalgae-dominated reefs, which offer increased food resources, structural complexity, and refuge \citep{edgar1993resource, ferreira2025}.
+    		
+    		\subsection{Sexual Selection, Trait Scaling, and Ecological Modulation}
+    		
+    		Allometric scaling of gnathopod 2 length in \textit{A. ramondi} indicated a consistent positive relationship with body size, and a trend toward steeper scaling for males. Though not statistically significant, this pattern is consistent with male-specific investment in sexually selected structures, as seen in other amphipods and crustaceans \citep{conlan1991precopulatory}. Alternatively, lower relative investment in gnathopod 2 length could reflect selection for larger overall body size, which may also influence reproductive success \citep{clutton1982functions} or vice versa \citep{Wellborn2000}. No such pattern was detected in \textit{C. acanthifera}, where scaling relationships did not differ by sex, and trait values were more conserved across habitats. \textit{C. acanthifera} exhibits limited sexual dimorphism, likely due to its generalist diet that includes macroalgae, detritus and epiphytes, minimizing resource monopolization  \citep{cruz2000effects}.    		
+    		Unlike carrier species that grasp females by hooking unenlarged gnathopods under the coxae or anterior pereon segments, caprellid males typically guard mates by attending, i.e., maintaining close proximity, often by positioning themselves over the female or sharing her tube \citep{conlan1991precopulatory}. In these mate-guarding taxa, the enlarged gnathopods are held free and not used for grasping; instead, they are employed in mate takeovers, agonistic interactions, defense, and possibly to assess the female’s reproductive state through contact pheromones \citep{conlan1991precopulatory}. Due to their sedentary and often gregarious habits, attending males are not energetically burdened by physically carrying a mate, but since they remain close to the female and must actively defend her, there is selective pressure for mechanisms that signal dominance or reproductive quality \citep{conlan1991precopulatory}. As a result, some attending species exhibit strong sexual selection on exaggerated traits wherein some males monopolize females \citep{borowsky1987}, and others defend mating clusters \citep{EmlenOring1977}. Several species evolve conspicuous weaponry on the gnathopods for use in fights, such as poison spines in \textit{Caprella gorgonia} \citep{lewbel1978sexual} or thumb-like projections in \textit{Dyopedos porrectus} \citep{mattson1989aspects}. That both \textit{C. acanthifera} and \textit{A. ramondi} belong to mate-attending superfamilies (Caprellidea and Corophioidea, respectively) yet show contrasting levels of dimorphism suggests that even within a shared guarding strategy, habitat use, and competitive context can shape the strength and nature of sexual selection.
+    
+    		These findings suggest that sexual dimorphism in Caprelloidea may be less labile or subject to different selective pressures compared to Corophioidea.
+    		
+    		\subsection{Ecological Complexity and Habitat Structure}
+    		
+    		\textit{A. ramondi}  and \textit{C. acanthifera} share broadly similar feeding habits: both species rely heavily on detritus (over 65\% of their diets), with \textit{A. ramondi} supplementing its detritivorous diet with herbivory \citep{castejon2019feeding, guerra2004fatty} while \textit{C. acanthifera} also consuming algae as an herbivore and exhibiting omnivory \citep{michel2015dominant}. Despite this overlap in dietary preferences, differences in their mobility, habitat use, competitive strategies, or mating behaviours may better explain variations in sexual dimorphism than diet alone. 
+    		
+    		The four habitats studied, viz. rhodolith beds, macroalgae-dominated reefs, seagrass meadows, and black coral forests, differ markedly in structural complexity, resource distribution, and potential for predator avoidance. Macroalgae-dominated reefs are relatively open but structurally intricate at a small scale, offering numerous attachment sites and food sources \citep{lippert2001macrofauna}, possibly enhancing male–female encounter rates and facilitating the evolution of conspicuous or exaggerated male traits. Rhodolith beds, composed of free-living coralline algae, form three-dimensional matrices that vary in complexity depending on rhodolith size and aggregation \citep{NavarroMayoral2020}; they may support high amphipod densities and moderate encounter rates but impose spatial constraints on movement. Seagrass meadows, while highly productive, are often more homogenous in structure \citep{barbera2005spatial} and may support lower refuge from predation compared to macroalgae-dominated reefs or rhodolith beds, possibly dampening selective pressures for extreme trait expression. However, more structurally complex seagrass meadows have been shown to support higher densities and species richness of amphipods \citep{navarro2023drivers}, suggesting that ranking habitats by complexity and heterogeneity is not always straightforward. 
+    		
+    		In contrast, black coral forests are among the most complex and vertically stratified habitats. Despite this, black coral forests can support high predator diversity and, particularly in deeper habitats, experience low light levels, which may limit active mate searching and favor cryptic behaviors or morphologies \citep{navarro2024hidden}. Their three-dimensional structure atop rocky substrates also creates numerous microhabitats that support diverse associated species \citep{Czechowska2020}. When sufficiently dense, they form dense aggregations known as ‘coral forests’ (a type of marine animal forest, see \citep{Rossi2017}) and provide protection against currents and predators \citep{buhl2018cold}. Thus, habitat characteristics likely shape amphipod abundance and behavior, but their influence on trait exaggeration and sexual dimorphism varies between species, reflecting species-specific responses to ecological complexity.    		
+    		
+    		\subsection{Future directions}
+    		
+    		While this study demonstrates the influence of habitat and sex on amphipod morphological traits, incorporating adult sex ratio (ASR) would provide deeper insight into the demographic mechanisms driving sexual dimorphism. ASR is often used as a proxy for the strength and direction of sexual selection \citep{janicke2018operational}, and its variation across habitats may correlate with shifts in dimorphism intensity. For example, female-biased ASRs, potentially arising in energetically constrained or high-predation habitats, could lead to reduced male-male competition and diminished exaggeration of sexually selected traits \citep{Kokko2008}. Conversely, male-biased ASRs may amplify selection for competitive traits and accentuate dimorphism \citep{Kokko2008}. ASR could not be reliably calculated due to sampling limitations, including selective counts (e.g., stopping after obtaining enough males in \textit{A. ramondi}) and damaged specimens that prevented sex identification and use in analysis. 
+    		
+    		As habitat structure shifts under ongoing environmental change, these alterations will reshape the ecological context in which sexual traits evolve. Seagrass meadows which are key ecosystem engineers, support diverse epifaunal communities as well as epiphytic macroalgae \citep{Tuya2014}, are experiencing widespread decline at local, regional, and global scales \citep{tuya2014decadal}. Under changing environmental conditions, sexual selection may increase rates of adaptation and aid evolutionary rescue \citep{martinossi2019efficacy}. In this context, tracking future trends in sexual dimorphism, and how such changes influence both population dynamics and life-history traits like mating behavior and reproductive strategies, will be crucial. Temperature-dependent increases in amphipod metabolic rates can accelerate life history traits such as growth and reproduction \citep{SainteMarie1991}, potentially leading to higher population growth and faster age at maturity. These shifts may intensify competition for mates or alter mate choice dynamics, ultimately influencing sexual selection intensity and contributing to variation in sexual dimorphism. Future studies should explore how these temperature-driven changes impact sexual selection processes and sexual dimorphism patterns.
+    		
+    		A key limitation of this study is the absence of direct measurements of habitat complexity, which constrains our ability to explicitly link morphological variation to environmental structure. Future research should therefore include quantitative assessments of habitat complexity to better connect habitat heterogeneity with sexually dimorphic trait divergence.
+    		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+
+		Our findings show that sexual dimorphism in amphipod morphology is influenced by both sex-specific selective pressures and ecological context, with outcomes that vary across species and habitats. \textit{Ampithoe ramondi} demonstrated clear sexual dimorphism in body size and gnathopod lengths, with habitat-specific expression suggesting plasticity or condition-dependent trait development. In contrast, \textit{Caprella acanthifera} showed weaker, more conserved patterns. Due to limited within-species comparisons across all four habitats and mixed patterns across traits, no uniform relationship could be established. The interaction between natural and sexual selection, modulated by habitat structure and possibly adult sex ratios, governs the expression of sexually dimorphic traits. Species with greater plasticity in trait development may adjust their morphological strategies depending on local competition, resource availability, or predation risk. 
+    		
+    		The inclusion of demographic, behavioral, and genetic variables in future studies will be essential to disentangle these complex evolutionary pressures. While sexual selection may not strongly drive adaptation under changing environmental conditions, it remains relevant. Environmental shifts can alter the costs of sexually selected traits, potentially leading to evolutionary hedging of those traits.Habitats such as seagrass meadows are often structurally simple, but can attain fine-scale complexity through epiphytic communities, including macroalgae, which increase surface area, enhance nutrient-rich food availability, provide habitat for epifauna, and modulate predation pressure \citep{leber1985influence, moksnes2008trophic}. Rhodolith beds too gain a secondary structural layer from epiphytic algae, creating a cascade effect that enhances habitat complexity. These epiphytes provide numerous microhabitats, refuge from predators, and a wider range of body sizes, reducing intra- and interspecific competition. Macroalgae-dominated reefs similarly form dense, structurally intricate habitats that trap sediment and detritus, supplying both physical structure and trophic resources. In contrast, black coral forests lack epiphytic layers, resulting in a more uniform and competitive environment. Accounting for these layered habitat components in future studies will be crucial for better understanding how habitat-specific factors influence the intensity and expression of sexual dimorphism.
+
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+
+% Only for journal Methods and Protocols:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
+
+% Only used for preprtints:
+% \supplementary{The following supporting information can be downloaded at the website of this paper posted on \href{https://www.preprints.org/}{Preprints.org}.}
+
+% Only for journal Hardware:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.\vspace{6pt}\\
+%\begin{tabularx}{\textwidth}{lll}
+%\toprule
+%\textbf{Name} & \textbf{Type} & \textbf{Description} \\
+%\midrule
+%S1 & Python script (.py) & Script of python source code used in XX \\
+%S2 & Text (.txt) & Script of modelling code used to make Figure X \\
+%S3 & Text (.txt) & Raw data from experiment X \\
+%S4 & Video (.mp4) & Video demonstrating the hardware in use \\
+%... & ... & ... \\
+%\bottomrule
+%\end{tabularx}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Author initials correspond to: A.D. = Amey Danole; F.T. = Fernando Tuya; S.N.-M. = Sandra Navarro-Mayoral; F.O.-F. = Francisco Otero-Ferrer; S.D.-V. = Sonia Díaz-Vergara
+
+\authorcontributions{
+Conceptualization, A.D., F.T. and S.N.-M.; 
+Methodology, S.N.-M., F.O.-F., F.T. and S.D.-V.; 
+Validation, F.T. and S.N.-M.; 
+Formal analysis, A.D.; 
+Investigation, A.D.; 
+Data curation, A.D.; 
+Writing—original draft preparation, A.D.; 
+Writing—review and editing, A.D., F.T., S.N.-M. and F.O.-F.; 
+Visualization, A.D.; 
+Supervision, F.T. and S.N.-M.; 
+Project administration, F.T. and S.N.-M. 
+All authors have read and agreed to the published version of the manuscript.
+}
+
+\institutionalreview{All procedures involving animals in this study were conducted in accordance with the ethical guidelines and regulations of Universidad de Las Palmas de Gran Canaria.}
+
+\dataavailability{All data and analysis scripts used in this study, including the final processed dataset and R scripts for analyses, are publicly available in the following GitHub repository: \url{https://github.com/amey-danole/Habitat-driven-variation-in-sexual-dimorphism-of-amphipods}.}
+
+%\durcstatement{Current research is limited to the [please insert a specific academic field, e.g., XXX], which is beneficial [share benefits and/or primary use] and does not pose a threat to public health or national security. Authors acknowledge the dual-use potential of the research involving xxx and confirm that all necessary precautions have been taken to prevent potential misuse. As an ethical responsibility, authors strictly adhere to relevant national and international laws about DURC. Authors advocate for responsible deployment, ethical considerations, regulatory compliance, and transparent reporting to mitigate misuse risks and foster beneficial outcomes.}
+
+% Only for journal Nursing Reports
+%\publicinvolvement{Please describe how the public (patients, consumers, carers) were involved in the research. Consider reporting against the GRIPP2 (Guidance for Reporting Involvement of Patients and the Public) checklist. If the public were not involved in any aspect of the research add: ``No public involvement in any aspect of this research''.}
+%
+%% Only for journal Nursing Reports
+%\guidelinesstandards{Please add a statement indicating which reporting guideline was used when drafting the report. For example, ``This manuscript was drafted against the XXX (the full name of reporting guidelines and citation) for XXX (type of research) research''. A complete list of reporting guidelines can be accessed via the equator network: \url{https://www.equator-network.org/}.}
+%
+%% Only for journal Nursing Reports
+%\useofartificialintelligence{Please describe in detail any and all uses of artificial intelligence (AI) or AI-assisted tools used in the preparation of the manuscript. This may include, but is not limited to, language translation, language editing and grammar, or generating text. Alternatively, please state that “AI or AI-assisted tools were not used in drafting any aspect of this manuscript”.}
+
+\acknowledgments{
+
+I would sincerely like to thank Lucia Castillo for her daily guidance, valuable insights, and support throughout the project, which greatly contributed to the development of this study. 
+
+}
+\conflictsofinterest{The authors declare no conflicts of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results'.} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendixtitles{no} % No dot after "Appendix"
+\appendixstart
+\appendix
+
+\section[\appendixname~\thesection]{Supplementary Information}
+
+% Table A1
+\begin{table}[H] 
+\caption{Sample sizes and functional traits for \textit{Ampithoe ramondi} and \textit{Caprella acanthifera} across four benthic habitats around Gran Canaria. M = males, F = females. BL = body length (mm), Gn2 = gnathopod 2 length (mm). Values shown are the median BL, median Gn2, and the geometric mean of Gn2/BL.\label{tab:supp_tableA1}}
+\begin{tabularx}{\textwidth}{l l r r r r r r}
+\toprule
+Habitat & Species & Total & M & F & BL & Gn2 & Gn2/BL \\
+\midrule
+Rhodolith beds & \textit{Ampithoe ramondi} & 22 & 12 & 10 & 6.367 & 2.040 & 0.305 \\
+Macroalgae-dominated reefs & \textit{Ampithoe ramondi} & 54 & 9 & 45 & 3.258 & 0.630 & 0.196 \\
+Seagrass meadows & \textit{Ampithoe ramondi} & 41 & 12 & 29 & 5.337 & 1.108 & 0.210 \\
+Black coral forests & \textit{Caprella acanthifera} & 15 & 6 & 9 & 3.294 & 1.294 & 0.377 \\
+Macroalgae-dominated reefs & \textit{Caprella acanthifera} & 34 & 6 & 28 & 4.205 & 0.776 & 0.184 \\
+\bottomrule
+\end{tabularx}
+\label{tab:table1}
+\end{table}
+
+% Table A2
+\begin{table}[H]
+\caption{Linear model results for \textit{Ampithoe ramondi} body length as a function of sex and habitat. Control = Rhodolith beds, M = Macroalgae-dominated reefs, S = Seagrass meadows. Significance codes: $***$ p $<$ 0.001, $**$ p $<$ 0.01, $*$ p $<$ 0.05. Residual standard error = 2.027, Adjusted $R^2$ = 0.267, F-statistic = 9.46 on 5 and 111 DF, p-value = 1.555e-07.\label{tab:supp_tableA2}}
+\centering
+\begin{tabularx}{\textwidth}{l r r r r}
+\toprule
+Term & Estimate & Std. Error & t value & p-value \\
+\midrule
+(Intercept) & 6.185 & 0.641 & 9.650 & $<$0.001 *** \\
+Sex\_labelMale & 0.362 & 0.868 & 0.417 & 0.677 \\
+HabitatM & -2.636 & 0.709 & -3.720 & 0.0003 *** \\
+HabitatS & -0.565 & 0.743 & -0.760 & 0.449 \\
+Sex\_labelMale:HabitatM & 3.274 & 1.141 & 2.871 & 0.0049 ** \\
+Sex\_labelMale:HabitatS & -0.455 & 1.112 & -0.409 & 0.683 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% Table A3
+\begin{table}[H]
+\caption{Beta regression results for \textit{Ampithoe ramondi} gnathopod ratio as a function of sex and habitat (logit link). Control = Rhodolith beds, M = Macroalgae-dominated reefs, S = Seagrass meadows. Significance codes: $***$ p $<$ 0.001, $**$ p $<$ 0.01, $*$ p $<$ 0.05. Model AIC = -356.5, BIC = -337.1, log-likelihood = 185.2, df.resid = 110.\label{tab:supp_tableA3}}
+\centering
+\begin{tabularx}{\textwidth}{l r r r r}
+\toprule
+Term & Estimate & Std. Error & z value & p-value \\
+\midrule
+(Intercept) & -1.187 & 0.090 & -13.202 & $<$0.001 *** \\
+Sex\_labelMale & 0.760 & 0.115 & 6.619 & $<$0.001 *** \\
+HabitatM & -0.212 & 0.100 & -2.105 & 0.035 * \\
+HabitatS & -0.256 & 0.106 & -2.408 & 0.016 * \\
+Sex\_labelMale:HabitatM & -0.622 & 0.157 & -3.974 & $<$0.001 *** \\
+Sex\_labelMale:HabitatS & -0.201 & 0.149 & -1.349 & 0.177 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% Table A4
+\begin{table}[H]
+\caption{Linear model results for \textit{Caprella acanthifera} body length as a function of sex and habitat. Control = Macroalgae-dominated reefs, B = Black-coral forests. Significance codes: $***$ p $<$ 0.001, $**$ p $<$ 0.01, $*$ p $<$ 0.05. Residual standard error = 0.595 on 45 DF, $R^2$ = 0.418, Adjusted $R^2$ = 0.379, F(3,45) = 10.76, p = 1.875e-05.\label{tab:supp_tableA4}}
+\centering
+\begin{tabularx}{\textwidth}{l r r r r}
+\toprule
+Term & Estimate & Std. Error & t value & p-value \\
+\midrule
+(Intercept) & 4.090 & 0.112 & 36.389 & $<$0.001 *** \\
+Sex\_labelMale & 0.885 & 0.268 & 3.306 & 0.002 ** \\
+HabitatB & -0.845 & 0.228 & -3.709 & 0.001 *** \\
+Sex\_labelMale:HabitatB & -0.375 & 0.412 & -0.910 & 0.368 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% Table A5
+\begin{table}[H]
+\caption{Beta regression results for \textit{Caprella acanthifera} gnathopod ratio as a function of sex and habitat. Control = Macroalgae-dominated reefs, B = Black-coral forests. Significance codes: $***$ p $<$ 0.001, $**$ p $<$ 0.01, $*$ p $<$ 0.05. Family = beta, link = logit, dispersion parameter = 118, AIC = -171.6, BIC = -162.2, logLik = 90.8, df.resid = 44.\label{tab:supp_tableA5}}
+\centering
+\begin{tabularx}{\textwidth}{l r r r r}
+\toprule
+Term & Estimate & Std. Error & z value & p-value \\
+\midrule
+(Intercept) & -1.553 & 0.045 & -34.19 & $<$0.001 *** \\
+Sex\_labelMale & 0.517 & 0.096 & 5.38 & $<$0.001 *** \\
+HabitatB & 1.044 & 0.078 & 13.45 & $<$0.001 *** \\
+Sex\_labelMale:HabitatB & -0.475 & 0.138 & -3.44 & 0.001 *** \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% Figure A1
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/SDI_by_species_and_habitat.png}
+\caption{Sexual Dimorphism Index (SDI) for \textit{Ampithoe ramondi} in Rhodolith beds (R), Macroalgae-dominated reefs (M), and Seagrass meadows (S), and for \textit{Caprella acanthifera} in Macroalgae-dominated reefs (M) and Black coral forests (B).}\label{fig:sdi_plot}
+\end{figure}
+
+% Figure A2
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Allometry_Ar.png}
+\caption{Sex-specific allometry of gnathopod ratio versus body length across habitats for \textit{Ampithoe ramondi}. Points represent individual measurements, with colors indicating sex (female: pink, male: blue). Linear-regression lines (±95\% CI) are shown for each sex. Facets represent habitats (R: Rhodolith beds, M: Macroalgae-dominated reefs, S: Seagrass meadows.)}\label{fig:Allometry_Ar}
+\end{figure}
+
+% Figure A3
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Allometry_Ca.png}
+\caption{Sex-specific allometry of gnathopod ratio versus body length across habitats for \textit{Caprella acanthifera}. Points represent individual measurements, with colors indicating sex (female: pink, male: blue). Linear-regression lines (±95\% CI) are shown for each sex. Facets represent habitats (M: Macroalgae-dominated reefs, B: Black-coral forests.)}
+\label{fig:Allometry_Ca}
+\end{figure}
+
+% Figure A4
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/SST_figure.png}
+\caption{Spatial distribution of the sampling sites along the eastern coast of Gran Canaria overlaid on the average sea surface temperature (SST, $^\circ$C) from 2018 to 2022, corresponding to the years of sampling. The SST values were derived from MODIS satellite observations at 4 km resolution. As shown, SST is relatively uniform across the study sites, indicating minimal variation in this key environmental variable.}
+\label{fig:SST_plot}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\isPreprints{}{% This command is only used for ``preprints''.
+\begin{adjustwidth}{-\extralength}{0cm}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+%\printendnotes[custom] % Un-comment to print a list of endnotes
+
+\reftitle{References}
+\bibliography{refs}
+
+% Please provide the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/).
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
+
+%=====================================
+% References, variant A: external bibliography
+%=====================================
+% \bibliography{your_external_BibTeX_file}
+
+%=====================================
+% References, variant B: internal bibliography
+%=====================================
+
+% If authors have biography, please use the format below
+%\section*{Short Biography of Authors}
+%\bio
+%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author1.pdf}}}
+%{\textbf{Firstname Lastname} Biography of first author}
+%
+%\bio
+%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
+%{\textbf{Firstname Lastname} Biography of second author}
+
+% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\PublishersNote{}
+%\isPreprints{}{% This command is only used for ``preprints''.
+\end{adjustwidth}
+%} % If the paper is ``preprints'', please uncomment this parenthesis.
+\end{document}
+
